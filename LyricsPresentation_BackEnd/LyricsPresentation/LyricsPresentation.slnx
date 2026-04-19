@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/Application/">
+    <Project Path="Application/Application.csproj" />
+  </Folder>
+  <Project Path="LyricsPresentation/LyricsPresentation.csproj" />
+</Solution>
