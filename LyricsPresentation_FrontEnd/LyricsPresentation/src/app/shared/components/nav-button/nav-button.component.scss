@@ -1,0 +1,23 @@
+.nav-btn {
+  background: transparent;
+  border: none;
+  color: var(--color-white);
+  padding: 0.8rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: var(--color-red);
+    background: rgba(123, 17, 19, 0.1);
+  }
+
+  &.active {
+    color: var(--color-red);
+    border-bottom: 2px solid var(--color-red);
+  }
+}

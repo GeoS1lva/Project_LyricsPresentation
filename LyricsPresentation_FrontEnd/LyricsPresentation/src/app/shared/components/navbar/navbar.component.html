@@ -1,0 +1,14 @@
+<nav class="navbar">
+  <div class="logo">
+    <span class="brand">ADOR<span>ART</span></span>
+  </div>
+  
+  <div class="menu-items">
+    @for (item of menuItems; track item.label) {
+      <app-nav-button 
+        [label]="item.label" 
+        [isActive]="item.active">
+      </app-nav-button>
+    }
+  </div>
+</nav>
