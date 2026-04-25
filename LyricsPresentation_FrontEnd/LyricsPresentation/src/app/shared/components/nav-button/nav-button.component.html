@@ -1,3 +1,7 @@
-<button class="nav-btn" [class.active]="isActive">
-  {{ label }}
+<button class="nav-btn" [class.active]="isActive" [class.collapsed]="isCollapsed">
+  <span class="material-symbols-outlined icon">{{ icon }}</span>
+  
+  @if (!isCollapsed) {
+    <span class="label">{{ label }}</span>
+  }
 </button>

@@ -1,0 +1,10 @@
+.app-layout {
+  display: flex;
+}
+
+.content-area {
+  flex: 1;
+  background-color: var(--color-black);
+  min-height: 100vh;
+  transition: margin-left 0.3s ease;
+}

@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from './shared/components/navbar/navbar.component';
-// ... outros imports
+import { RouterOutlet } from "@angular/router";
 
 @Component({
   selector: 'app-root',
@@ -8,4 +8,4 @@ import { NavbarComponent } from './shared/components/navbar/navbar.component';
   imports: [NavbarComponent],
   templateUrl: './app.html',
 })
-export class AppComponent { }
+export class App { }

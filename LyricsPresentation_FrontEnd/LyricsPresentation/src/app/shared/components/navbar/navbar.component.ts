@@ -1,19 +1,26 @@
 import { Component } from '@angular/core';
-import { CommonModule } from '@angular/common';
 import { NavButtonComponent } from '../nav-button/nav-button.component';
-  
+
 @Component({
   selector: 'app-navbar',
   standalone: true,
-  imports: [CommonModule, NavButtonComponent],
+  imports: [NavButtonComponent],
   templateUrl: './navbar.component.html',
-  styleUrl: './navbar.component.scss'
+  styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent {
+  isCollapsed = false;
+
   menuItems = [
-    { label: 'Início', active: true },
-    { label: 'Letras', active: false },
-    { label: 'Apresentações', active: false },
-    { label: 'Configurações', active: false }
+    { icon: 'home', label: 'Painel Principal', active: false },
+    { icon: 'music_note', label: 'Preparação de Hinos', active: true },
+    { icon: 'menu_book', label: 'Biblioteca de Hinos', active: false },
+    { icon: 'group', label: 'Membros', active: false },
+    { icon: 'history', label: 'Histórico', active: false },
+    { icon: 'settings', label: 'Configurações', active: false }
   ];
+
+  toggleNavbar() {
+    this.isCollapsed = !this.isCollapsed;
+  }
 }

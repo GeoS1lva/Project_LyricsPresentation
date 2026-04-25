@@ -1,13 +1,14 @@
 :root {
   --color-black: #000000;
-  --color-red: #7B1113;
-  --color-gray: #F3F1F6;
+  --color-dark-red: #7B1113;
+  --color-light-gray: #F3F1F6;
   --color-white: #FFFFFF;
 }
 
 body {
   margin: 0;
-  font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
-  background-color: var(--color-black);
+  font-family: 'Montserrat', sans-serif;
+  background-color: var(--color-light-gray);
   color: var(--color-white);
+  -webkit-font-smoothing: antialiased;
 }
