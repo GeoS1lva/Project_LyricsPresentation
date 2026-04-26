@@ -12,12 +12,12 @@ export class NavbarComponent {
   isCollapsed = false;
 
   menuItems = [
-    { icon: 'home', label: 'Painel Principal', active: false },
-    { icon: 'music_note', label: 'Preparação de Hinos', active: true },
-    { icon: 'menu_book', label: 'Biblioteca de Hinos', active: false },
-    { icon: 'group', label: 'Membros', active: false },
-    { icon: 'history', label: 'Histórico', active: false },
-    { icon: 'settings', label: 'Configurações', active: false }
+    { icon: 'home', label: 'Painel Principal', path: '/home' },
+    { icon: 'music_note', label: 'Preparação de Hinos', path: '/preparacao' },
+    { icon: 'menu_book', label: 'Biblioteca de Hinos', path: '/biblioteca' },
+    { icon: 'group', label: 'Membros', path: '/membros' },
+    { icon: 'history', label: 'Histórico', path: '/historico' },
+    { icon: 'settings', label: 'Configurações', path: '/configuracoes' }
   ];
 
   toggleNavbar() {

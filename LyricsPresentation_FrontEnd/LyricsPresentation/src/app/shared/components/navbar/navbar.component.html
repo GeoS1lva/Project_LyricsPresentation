@@ -9,11 +9,11 @@
   </div>
 
   <div class="menu-section">
-    @for (item of menuItems; track item.label) {
+    @for (item of menuItems; track item.path) {
       <app-nav-button
         [icon]="item.icon"
         [label]="item.label"
-        [isActive]="item.active"
+        [routerLink]="item.path"
         [isCollapsed]="isCollapsed">
       </app-nav-button>
     }
